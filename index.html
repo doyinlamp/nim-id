@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIM Membership ID Card</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="nimlogo.png" alt="NIM Logo">
+            </div>
+            <h1>NIM Membership e-ID Card</h1>
+        </div>
+        <div class="main-container">
+            <div class="form-container">
+                <h2>Enter Your Membership Details</h2>
+                <form id="idForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="membershipNumber">Membership Number:</label>
+                        <input type="text" id="membershipNumber" name="membershipNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="membershipGrade">Membership Grade:</label>
+                        <select id="membershipGrade" name="membershipGrade">
+                            <option value="Fellow">Fellow</option>
+                            <option value="Member">Member</option>
+                            <option value="Associate">Associate</option>
+                            <option value="Graduate">Graduate</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="passportPhoto">Passport Photo:</label>
+                        <input type="file" id="passportPhoto" name="passportPhoto" accept="image/*" required>
+                    </div>
+                    
+                    <button type="submit">Generate ID Card</button>
+                </form>
+            </div>
+            <div class="preview-container">
+                <h2>ID Card Preview</h2>
+                <canvas id="cardCanvas"></canvas> <button type="button" class="save-button hidden" onclick="saveCardAsPNG()">Download Your Card</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/canvas.js"></script>
+</body>
+</html>

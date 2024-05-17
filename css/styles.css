@@ -1,0 +1,137 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0010a3;
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  select,
+  button {
+    width: 85%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #dd0202;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .card {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+  }
+  
+  .card-body {
+    padding-top: 20px;
+  }
+  
+  .card-body img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .logo-container {
+    flex: 0 0 auto; /* Allow the logo container to shrink */
+    margin-right: 20px; /* Add some space between the logo and the heading */
+  }
+  
+  .logo-container img {
+    height: 100px;
+  }
+  
+  .title {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-left: 10px;
+    display:inline-flex;
+}
+/* styles.css */
+
+#cardPreview {
+    background-color: white;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between; /* Distribute items along the main axis */
+  }
+  
+  .form-container,
+  .preview-container {
+    width: 48%; /* Set initial width for both containers */
+  }
+  
+  .form-container {
+    flex: 0 0 60%; /* Make the form container take up 60% of the available space */
+  }
+  
+  .preview-container {
+    flex: 0 0 40%; /* Make the preview container take up 40% of the available space */
+  }
+  
+  .preview-container #cardPreview {
+    height: 400px; /* Set height for the card preview */
+    border: 1px solid #ccc; /* Add border for the preview */
+    border-radius: 5px;
+    padding: 60px;
+  }
+
+  #cardCanvas {
+    border: 1px solid #ccc; /* Add a border for visibility */
+    width: 470px;  /* Adjust the width and height as needed */
+    height: 290px;
+}
